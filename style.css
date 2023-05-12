@@ -1,0 +1,30 @@
+html{font-family: 'Anton', sans-serif;
+    background-color:burlywood;
+    }
+    h1{
+        color:black;
+        font-size: larger;
+        display: block;
+        position:absolute;
+    }
+    .app{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+    }
+    .buttonGroup{
+    margin-top: 150px;
+    }
+    button{
+        position: absolute;
+        display: flex;
+        cursor:pointer;
+    margin: 0 10px;
+    padding: 10px 30px;
+    background-color: cornsilk;
+    border: none;
+    }
+    .button--NÃO{
+    right: 50%;
+    }
