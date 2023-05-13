@@ -1,11 +1,19 @@
-const b = document.querySelector('button.button--NÃO')
-b.addEventListener("mouseover",moveHover )
+const wrapper = document.querySelector('.wrapper');
+const question = document.querySelector('.question');
+const yesBtn = document.querySelector('.yes-btn');
+const noBtn = document.querySelector('.no-btn');
 
-function moveHover(){
-    const i=Math.floor(Math.random()*500)=1 ;
-    const j=Math.floor(Math.random()*500)=1 ;
+const wrapperRect = wrapper.getBoundingClientRect();
+const noBtnRect = noBtn.getBoundingClientRect();
+
+yesBtn.addEventListener('click', () => {
+    question.innerHTML = 'Obrigado por vim'
+});
+
+noBtn.addEventListener('mouseover', () => {
+    const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
+    const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1;
     
-
-    b.style.left=1+"px"
-    b.style.top=j+"px"
-}
+    noBtn.style.left = i + 'px';
+    noBtn.style.top = j + 'px';
+});
