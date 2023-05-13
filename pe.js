@@ -7,7 +7,7 @@ const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
 
 yesBtn.addEventListener('click', () => {
-    question.innerHTML = 'Obrigado por vim'
+    question.innerHTML = 'Ta agr você tem um contrato assinado e precisa vir'
 });
 
 noBtn.addEventListener('mouseover', () => {
